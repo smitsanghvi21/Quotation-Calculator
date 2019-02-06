@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="priceCalci.css">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <!--Jumbotron added from bootstrap-->
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Quatation Calculator</h1>
+        <p class="lead">Enter the quantity you want to purchase and the rate you are willing to offer.</p>
+        <!--price field-->
+        <form>
+            <div class="form-group">
+              <label for="formGroupExampleInput">Price</label>
+              <input type="number" class="form-control" id="2" placeholder="Enter price">
+            </div>
+            <!--quantity field in form of range/slider selector-->
+            <div class="form-group">
+              <label for="formGroupExampleInput2">Quantity</label>
+              <!--this will show number of quantity-->
+              <span class="badge badge-light" id="6"></span>
+            <!--range selector-->
+              <input type="range" class="form-control" id="4" name="quantity" value="1" min="1" max="10" step="1">
+            </div>
+            <!--this will dislay the total-->
+            <div class="text-right" id="3"></div>
+            <!--button to submit data-->
+            <button type="button" id="10" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+               Submit
+              </button>
+              
+          </form>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="priceCalci.js"></script>
+  </body>
+</html>
